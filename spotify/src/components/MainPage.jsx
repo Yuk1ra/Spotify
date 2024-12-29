@@ -1,27 +1,9 @@
 import Aside from "./Aside"
+import Header from "./Header"
+import Footer from "./Footer"
+import Main from "./Main"
+import '../style/MainPage.css';
 
-export default function Header(){
-    return(
-        <header>
-
-        </header>
-    )
-}
-export default function Footer(){
-    return(
-        <footer>
-
-        </footer>
-    )
-}
-
-export default function Main(){
-    return(
-        <main>
-
-        </main>
-    )
-}
 export default function MainPage(){
     return(
     <body>
