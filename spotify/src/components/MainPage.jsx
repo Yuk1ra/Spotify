@@ -1,4 +1,3 @@
-import Aside from "./Aside"
 import Header from "./Header"
 import Footer from "./Footer"
 import Main from "./Main"
@@ -11,7 +10,6 @@ export default function MainPage(){
       <Header/> 
       <Main/>
       <Sidebar/>
-      <Aside/>
       <Footer/>
     </body>  
     )
