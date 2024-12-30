@@ -3,8 +3,8 @@ import '../style/Header.css';
 
 export default function Header(){
     return(
-        <header>
-            <h1 class = "header"> MusicTime </h1>
+        <header class = "header">
+            <h1>MusicTime </h1>
             <NavButtons/>
         </header>
     )

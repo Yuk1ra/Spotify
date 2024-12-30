@@ -1,4 +1,3 @@
-import Aside from "./Aside"
 import Header from "./Header"
 import Footer from "./Footer"
 import Main from "./Main"
@@ -8,10 +7,9 @@ import Sidebar from "./Sidebar";
 export default function MainPage(){
     return(
     <body>
-      <Header/> 
+      <Header/>
+      <Sidebar/> 
       <Main/>
-      <Sidebar/>
-      <Aside/>
       <Footer/>
     </body>  
     )

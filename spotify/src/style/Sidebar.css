@@ -1,0 +1,37 @@
+.playlists{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+}
+h4{
+    color: aliceblue;
+    font-family: 'BauhausBold', monospace;
+    font-size: 21px;
+    margin: 5px;
+}
+.listbutton {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    transition: height 1s, width 1s;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.listbutton::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    transition: height 1s, width 1s;
+}
+
+.listbutton:hover {
+    height: 140px;
+    width: 140px;
+}
+

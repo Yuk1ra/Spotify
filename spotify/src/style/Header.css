@@ -6,4 +6,5 @@ header {
     font-family: 'BauhausBold', monospace;
     font-size: 50px;
     color:beige;
+    position: relative;
   }
