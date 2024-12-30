@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+  font-family: 'AlfaSlabOne';
+  src: url('./fonts/AlfaSlabOne.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Architectural';
+  src: url('./fonts/Architectural.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BauhausBold';
+  src: url('./fonts/BauhausBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
