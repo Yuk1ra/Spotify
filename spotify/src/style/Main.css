@@ -5,12 +5,20 @@ main{
     padding: 0;
 } 
 
-
 .buttonsMain{
-    position: relative;
     margin: 15px;
     padding : 15px;
     border-radius: 15px;
-    border: 1px solid #ccc;
-    background: linear-gradient(to right, #fd79ff, #7fcaff);
+    border: 1px;
+    background: linear-gradient(to right, #fd79ff,#7fcaff,#fd79ff);
+    background-size: 200%;
+    background-position:left;
+}
+.buttonsMain:hover{
+    animation: ButtonGradient 2.5s linear infinite;
+}
+@keyframes ButtonGradient {
+    to{
+        background-position: 200%;
+    }
 }
