@@ -23,40 +23,57 @@
 }
 .sidebarbutton::after{
     content: "";
-    color:white;
-    background: linear-gradient(#7fcaff,#fd79ff);
+    background: #151515;
+    position:absolute;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    width: 94%;
+    height: 94%;
+    top:6%;
+    right:3%;
+    z-index: 2;
+}
+.sidebarbutton::before{
+    content: "";
+    background: linear-gradient(0deg,#7fcaff,#fd79ff,#7fcaff);
     position: absolute;
+    background-size: 100% 400%;
     width: 100%;
     height: 100%;
     top:0;
     right: 0;
-}
-.sidebarbutton::before{
-    content: "";
-    background: #151515;
-    position:absolute;
-    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
-    width: 90%;
-    height: 90%;
-    top:10%;
-    right:5%;
-    z-index: 2;
+    animation: animate-gradient-border 5s linear infinite;
 }
 .sidebarbuttonarrow{
     left: 0;
-    color: white;
     z-index: 3;
+    background: linear-gradient(to right,#7fcaff,#fd79ff,#7fcaff);
+    background-size: 200%;
+    text-transform: uppercase;
+    text-align: center;
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
     position: relative;
     display: inline-block;
     rotate: -90deg;
     font-size: 40px;
-    text-shadow: 0 0 5px #fff,
-    0 0 10px #fff,
-    0 0 15px lightgrey,
-    0 0 20px lightgrey,
-    0 0 25px lightgrey,
-    0 0 30px lightgrey,
-    0 0 35px lightgrey;
+}
+@keyframes animate-gradient{
+    to{
+        background-position: 200%;
+    }
+}
+@keyframes animate-gradient-border {
+    0% {
+        background-position: 0% 200%;
+    }
+    50% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% 200%;
+    }
 }
 h4{
     color: aliceblue;
