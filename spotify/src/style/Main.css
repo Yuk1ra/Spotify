@@ -1,0 +1,36 @@
+main{
+    position: relative;
+    top:0;
+    text-align: center;
+    margin: 50px;
+    padding: 50px;
+    background: linear-gradient(39deg, #c305c6, #2700e8);
+    border-radius: 15px;
+
+    -o-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+} 
+
+@-o-keyframes AnimationName {
+    0%{background-position:72% 0%}
+    50%{background-position:29% 100%}
+    100%{background-position:72% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:72% 0%}
+    50%{background-position:29% 100%}
+    100%{background-position:72% 0%}
+}
+
+nav{
+    margin: 10px;
+    padding: 0;
+}
+
+.buttonsMain{
+    margin: 15px;
+    padding : 15px;
+    border-radius: 15px;
+    border: 1px;
+    background: linear-gradient(to right, #fd79ff, #7fcaff);
+}
