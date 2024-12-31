@@ -1,22 +1,22 @@
 main{
-    position: relative;
     top:0;
     text-align: center;
     margin: 50px;
     padding: 50px;
-    background: linear-gradient(39deg, #c305c6, #2700e8);
+    background: linear-gradient(39deg, #c305c6, #2700e8,#c305c6,#2700e8);
+    background-size: 400% 400%;
     border-radius: 15px;
 
-    -o-animation: AnimationName 10s ease infinite;
-    animation: AnimationName 10s ease infinite;
+    animation: MainGradient 5s ease infinite;
+    -o-animation: MainGradient 5s ease infinite;
 } 
 
-@-o-keyframes AnimationName {
+@-o-keyframes MainGradient {
     0%{background-position:72% 0%}
     50%{background-position:29% 100%}
     100%{background-position:72% 0%}
 }
-@keyframes AnimationName {
+@keyframes MainGradient {
     0%{background-position:72% 0%}
     50%{background-position:29% 100%}
     100%{background-position:72% 0%}
