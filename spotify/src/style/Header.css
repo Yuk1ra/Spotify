@@ -1,11 +1,12 @@
 header {
-    height: 100px;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     font-family: 'BauhausBold', monospace;
-    font-size: 50px;
-    color:beige;
-    position: relative;
+    font-size: 30px;
+    color:white;
+    background: linear-gradient(50deg, #c00bed,#b61717);
+    z-index: 10;
   }
