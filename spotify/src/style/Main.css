@@ -5,20 +5,43 @@ main{
     padding: 0;
 } 
 
-.buttonsMain{
+.buttonsMain {
+    position: relative;
+    height: auto;
+    width: 150px;
     margin: 15px;
-    padding : 15px;
-    border-radius: 15px;
-    border: 1px;
-    background: linear-gradient(to right, #fd79ff,#7fcaff,#fd79ff);
-    background-size: 200%;
-    background-position:left;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #151515;
+    color: white;
+    font-size: 25px;
+    transition: ease-in-out 0.3s;
+    outline: none;
+    border: 3px solid #1d9ce0;
+    overflow: hidden;
+    z-index: 1;
 }
-.buttonsMain:hover{
-    animation: ButtonGradient 2.5s linear infinite;
+
+.buttonsMain:hover {
+    color: #fff;
+    cursor: pointer;
 }
-@keyframes ButtonGradient {
-    to{
-        background-position: 200%;
-    }
+
+.buttonsMain:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    background: linear-gradient(50deg, #fd79ff, #7fcaff );
+    transition: 0.5s all ease;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.buttonsMain:hover:before {
+    left: 0;
+    right: 0;
+    opacity: 1; 
 }
