@@ -1,12 +1,67 @@
 header {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    font-family: 'BauhausBold', monospace;
-    font-size: 30px;
-    color:white;
-    background: linear-gradient(50deg, #c00bed,#b61717);
-    z-index: 10;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: var(--bg);
+  position: relative;
+  overflow: hidden;
+}
+
+:root {
+  --bg: #151515;
+}
+
+h1 {
+  font-family: 'BauhausBold', monospace;
+  font-size: 50px;
+  margin: 0;
+  text-transform: uppercase;
+  position: relative;
+  transition: all 200ms;
+  color: #ffffff; /* Додаємо білий колір тексту для кращої видимості */
+}
+
+h1:hover {
+  transform: skew(15deg);
+  color: #7fcaff;
+}
+
+h1::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg);
+  overflow: hidden;
+  transition: all 200ms ease-in-out;
+  pointer-events: none;
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+h1:hover::before {
+  top: -3px;
+  padding-left: 5px;
+  color: #fd79ff;
+}
+
+h1::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+  pointer-events: none;
+  transition: all 200ms;
+}
+
+h1:hover::after {
+  text-shadow: 0 0 15px #fd79ff;
+}
