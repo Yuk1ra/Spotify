@@ -1,9 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html{
-    height: 100%;
     width: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
     background: #151515;
 }
+html, body {
+    height: 100%;
+}
 
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
