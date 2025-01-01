@@ -35,12 +35,16 @@ export default function Sidebar() {
     return (
         <div className="sidebar" id="sidebar">
             <button className="sidebarbutton" id="sidebarbutton">
-                <p className="sidebarbuttonarrow" id="sidebarbuttonarrow">➣</p>
+                <p className="sidebarbuttonarrow" id="sidebarbuttonarrow">▷</p>
             </button>
             <div className="playlists" id="playlists">
-                <button className="listbutton">Playlist1</button>
-                <button className="listbutton">Playlist2</button>
-                <button className="listbutton">Playlist3</button>
+                <button className="listbutton"><img src="./images/playlist1.jpg" class ='sideimgs'/></button>
+                <button className="listbutton"><img src="./images/playlist2.jpg" class ='sideimgs'/></button>
+                <button className="listbutton"><img src="./images/playlist3.jpg" class ='sideimgs'/></button>
+                <button className="listbutton"><img src="./images/playlist4.jpg" class ='sideimgs'/></button>
+                <button className="listbutton"><img src="./images/playlist5.jpg" class ='sideimgs'/></button>
+                <button className="listbutton"><img src="./images/playlist6.jpg" class ='sideimgs'/></button>
+                <button className="listbutton"><img src="./images/playlist7.jpg" class ='sideimgs'/></button>
             </div>
         </div>
     );

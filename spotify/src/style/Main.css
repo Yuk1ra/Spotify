@@ -1,11 +1,14 @@
 main {
+    height: 100vh;
     text-align: center;
     margin: 10px;
     padding: 0;
     top: 0;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .buttonsMain {
@@ -21,7 +24,6 @@ main {
     transition: ease-in-out 0.3s;
     outline: none;
     border: 3px solid #1d9ce0;
-    overflow: hidden;
     z-index: 1;
 }
 
@@ -54,9 +56,24 @@ main {
     flex-wrap: wrap; 
     justify-content: space-between; 
     gap: 20px; 
-    padding: 0 25%; 
+    padding: 20px;
     margin: 0;
     box-sizing: border-box;
+    overflow-y: auto;
+    max-height: 90vh; 
+    width: 70%; 
+}
+
+.pllists::-webkit-scrollbar {
+    width: 10px;
+}
+
+.pllists::-webkit-scrollbar-thumb {
+    background: linear-gradient(50deg, #fd79ff, #7fcaff);
+}
+
+.pllists::-webkit-scrollbar-track {
+    background: #151515;
 }
 
 .audio {
@@ -88,16 +105,15 @@ main {
     margin-top: 5px;
 }
 
-@media (max-width: 1024px) {
-    .audio {
-        width: 45%; 
-    }
-}
-
-@media (max-width: 768px) {
-    .audio {
-        width: 90%; 
-    }
+nav button{
+    box-shadow:
+        0 0 5px #fff,
+        0 0 5px #fff,
+        0 0 5px rgb(225, 0, 0),
+        0 0 10px rgb(255, 0, 0),
+        0 0 5px rgb(252, 0, 227),
+        0 0 10px rgb(252, 0, 227),
+        0 0 10px rgb(252, 0, 227);
 }
 
 
