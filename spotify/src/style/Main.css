@@ -115,5 +115,92 @@ nav button{
         0 0 10px rgb(252, 0, 227),
         0 0 10px rgb(252, 0, 227);
 }
+.infobar{
+    width:100%;
+    height: 100%;
+    background: white;
+}
+.infobarbutton{
+    color: white; 
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    top:40%;
+    font-size: 40px;
+    transform: translateY(-50%) rotate(270deg);
+    transform-origin:bottom right;
+}
+.infobarbutton::after{
+    content: "";
+    background: #151515;
+    position:absolute;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    width: 94%;
+    height: 94%;
+    top:6%;
+    right:3%;
+    z-index: 2;
+}
+.infobarbutton::before{
+    content: "";
+    background: linear-gradient(0deg,#7fcaff,#fd79ff,#7fcaff);
+    position: absolute;
+    background-size: 100% 400%;
+    width: 100%;
+    height: 100%;
+    top:0;
+    right: 0;
+    animation: animate-gradient-border 5s linear infinite;
+}
+.musicsymbol{
+    background: linear-gradient(to right,#7fcaff,#fd79ff,#7fcaff);
+    background-size: 200%;
+    text-transform: uppercase;
+    text-align: center;
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    z-index: 5;
+    position:relative;
+    transform: rotate(90deg);
+}
 
-
+.musicsymbol::before{
+    content: "";
+    background-size: 600%;
+    background: linear-gradient(45deg,#7fcaff,#fd79ff,#7fcaff);
+    position: absolute;
+    height: 60%;
+    top:20%;
+    right: 5%;
+    width: 100%;
+    filter: blur(15px);
+    border-radius: 10px;
+    opacity:0.3;
+    z-index:3;
+}
+@keyframes animate-gradient{
+    to{
+        background-position: 200%;
+    }
+}
+@keyframes animate-gradient-border {
+    0% {
+        background-position: 0% 200%;
+    }
+    50% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% 200%;
+    }
+}
