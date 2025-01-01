@@ -88,16 +88,6 @@ main {
     margin-top: 5px;
 }
 
-@media (max-width: 1024px) {
-    .audio {
-        width: 45%; 
-    }
-}
 
-@media (max-width: 768px) {
-    .audio {
-        width: 90%; 
-    }
-}
 
 
