@@ -17,7 +17,7 @@ h1 {
   text-transform: uppercase;
   position: relative;
   transition: all 200ms;
-  color: #ffffff; /* Додаємо білий колір тексту для кращої видимості */
+  color: #ffffff;
 }
 
 h1:hover {
@@ -64,8 +64,8 @@ h1:hover::after {
   font-size: 24px;
   animation: fly 3s ease-in-out forwards;
   opacity: 0;
-  color: white;
   z-index: 5;
+  transition: color 0.2s ease;
 }
 
 @keyframes fly {
