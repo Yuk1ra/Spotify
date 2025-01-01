@@ -3,6 +3,99 @@
     flex-direction: column;
     position: absolute;
     top: 0px;
+    z-index: 3;
+    padding: 10px 0px 10px 8px;
+}
+.sidebarbutton{
+    color: white; 
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    left: 110px;
+    top:40%;
+    width: 140px;
+    transform: translateY(-50%) rotate(90deg);
+    transform-origin:bottom left;
+}
+.sidebarbutton::after{
+    content: "";
+    background: #151515;
+    position:absolute;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    width: 94%;
+    height: 94%;
+    top:6%;
+    right:3%;
+    z-index: 2;
+}
+.sidebarbutton::before{
+    content: "";
+    background: linear-gradient(0deg,#7fcaff,#fd79ff,#7fcaff);
+    position: absolute;
+    background-size: 100% 400%;
+    width: 100%;
+    height: 100%;
+    top:0;
+    right: 0;
+    animation: animate-gradient-border 5s linear infinite;
+}
+.sidebarbuttonarrow{
+    left: 0;
+    z-index: 3;
+    background: linear-gradient(to right,#7fcaff,#fd79ff,#7fcaff);
+    background-size: 200%;
+    text-transform: uppercase;
+    text-align: center;
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+    position: relative;
+    display: inline-block;
+    rotate: -90deg;
+    font-size: 40px;
+    z-index: 4;
+}
+.sidebarbuttonarrow::before{
+    content: "";
+    background-size: 600%;
+    background: linear-gradient(45deg,#7fcaff,#fd79ff,#7fcaff);
+    position: absolute;
+    height: 60%;
+    top:20%;
+    right: 5%;
+    width: 100%;
+    filter: blur(8px);
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity:0.3;
+    z-index:3;
+}
+@keyframes glare-gradient{
+    0%{background-position:0% 0%;}
+    50%{background-position:400% 0%;}
+    100%{background-position:0% 0%;}
+}
+@keyframes animate-gradient{
+    to{
+        background-position: 200%;
+    }
+}
+@keyframes animate-gradient-border {
+    0% {
+        background-position: 0% 200%;
+    }
+    50% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% 200%;
+    }
 }
 h4{
     color: aliceblue;
@@ -11,27 +104,47 @@ h4{
     margin: 5px;
 }
 .listbutton {
-    height: 100px;
-    width: 100px;
-    position: relative;
-    transition: height 1s, width 1s;
-    margin: 5px;
-    border-radius: 10px;
-}
-
-.listbutton::after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     height: 80px;
     width: 80px;
-    border-radius: 50%;
-    transition: height 1s, width 1s;
+    position: relative;
+    margin: 5px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
 .listbutton:hover {
-    height: 140px;
-    width: 140px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
 }
-
+.sidebar{
+    position: fixed;
+    width:110px;
+    height: 80%;
+    top:10%;
+    left: -110px;
+    display: flex;
+    background: #151515;
+}
+.sidebar::before{
+    content: "";
+    background: linear-gradient(0deg,#7fcaff,#fd79ff,#7fcaff);
+    position: absolute;
+    background-size: 100% 400%;
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 100%;
+    top:0;
+    right: 0;
+    animation: animate-gradient-border 5s linear infinite;
+}
+.sidebar::after{
+    content: "";
+    background: #151515;
+    position:absolute;
+    width: 100%;
+    border-radius: 5px;
+    height: 99%;
+    top:0.5%;
+    right:3%;
+    z-index: 2;
+}
