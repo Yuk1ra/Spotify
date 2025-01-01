@@ -58,6 +58,27 @@
     display: inline-block;
     rotate: -90deg;
     font-size: 40px;
+    z-index: 4;
+}
+.sidebarbuttonarrow::before{
+    content: "";
+    background-size: 600%;
+    background: linear-gradient(45deg,#7fcaff,#fd79ff,#7fcaff);
+    position: absolute;
+    height: 60%;
+    top:20%;
+    right: 5%;
+    width: 100%;
+    filter: blur(8px);
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity:0.3;
+    z-index:3;
+}
+@keyframes glare-gradient{
+    0%{background-position:0% 0%;}
+    50%{background-position:400% 0%;}
+    100%{background-position:0% 0%;}
 }
 @keyframes animate-gradient{
     to{

@@ -1,5 +1,10 @@
-document.addEventListener("click",)
+var buttons = document.getElementsByClassName('sidebarbutton');
+var playlists = document.getElementsByClassName('playlists')[0];
 
-function sidebarFun(){
-    document.getElementById
+for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", sidebarOpen);
+}
+
+function sidebarOpen() {
+    playlists.style.display = "flex";
 }
