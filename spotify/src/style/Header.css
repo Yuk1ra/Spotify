@@ -59,3 +59,22 @@ h1::after {
 h1:hover::after {
   text-shadow: 0 0 15px #fd79ff;
 }
+.music-note {
+  position: absolute;
+  font-size: 24px;
+  animation: fly 3s ease-in-out forwards;
+  opacity: 0;
+  color: white;
+  z-index: 5;
+}
+
+@keyframes fly {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-200px) scale(1.5);
+  }
+}
