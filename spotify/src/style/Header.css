@@ -34,10 +34,7 @@ h1::before {
   height: 100%;
   background: var(--bg);
   overflow: hidden;
-  transition: all 200ms ease-in-out;
-  pointer-events: none;
-  mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
-  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+  transition: all 700ms ease-in-out;
 }
 
 h1:hover::before {
