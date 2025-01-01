@@ -1,11 +1,14 @@
-.playlists{
+.playlists {
+    height: 800px; 
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 0px;
     z-index: 3;
+    overflow-y: auto;
     padding: 10px 0px 10px 8px;
 }
+
 .sidebarbutton{
     color: white; 
     font-size: 16px;
@@ -108,8 +111,21 @@ h4{
     width: 80px;
     position: relative;
     margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     transition: all 0.3s ease;
+}
+
+.sideimgs {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
 }
 
 .listbutton:hover {
@@ -147,4 +163,15 @@ h4{
     top:0.5%;
     right:3%;
     z-index: 2;
+}
+.playlists::-webkit-scrollbar {
+    width: 5px; 
+}
+
+.playlists::-webkit-scrollbar-thumb {
+    background: linear-gradient(50deg, #fd79ff, #7fcaff); 
+}
+
+.playlists::-webkit-scrollbar-track {
+    background: #151515; 
 }
