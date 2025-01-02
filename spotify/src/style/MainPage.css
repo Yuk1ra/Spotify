@@ -20,3 +20,6 @@ html, body {
     min-height: 100vh;
 }
 
+html::-webkit-scrollbar{
+    background-color: transparent;
+}
