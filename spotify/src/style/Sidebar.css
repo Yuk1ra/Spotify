@@ -1,5 +1,5 @@
 .playlists {
-    height: 75vh; 
+    height: 77.5vh; 
     position: absolute;
     top: 10px;
     z-index: 3;
@@ -76,11 +76,6 @@
     border-radius: 10px;
     opacity:0.3;
     z-index:3;
-}
-@keyframes glare-gradient{
-    0%{background-position:0% 0%;}
-    50%{background-position:400% 0%;}
-    100%{background-position:0% 0%;}
 }
 @keyframes animate-gradient{
     to{
