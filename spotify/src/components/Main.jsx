@@ -1,19 +1,15 @@
 import "../style/Main.css";
+import NavButtons from "./NavButtons";
+import React, { useEffect } from "react";
 
 export default function Main() {
   return (
     <main>
-      <nav>
-        <button className="buttonsMain">Music</button>
-        <button className="buttonsMain">Podcasts</button>
-        <button className="buttonsMain">Artists</button>
-        <button className="buttonsMain">Albums</button>
-        <button class="profbutton" id="profileButton">
-            <img src="/images/profile/profile1.jpg" class="profimg" alt="Profile" />
-            <span class="tooltip">IgorPishta</span>
-            </button>
-      </nav>
-
+      <NavButtons />
+      <button className="profbutton" id="profileButton">
+        <img src="/images/profile/profile1.jpg" className="profimg" alt="Profile" />
+        <span className="profilename">IhorPishta</span>
+      </button>
       <div className="pllists">
         <button className="audio">
           <img src="/images/img1.png" alt="list1" />

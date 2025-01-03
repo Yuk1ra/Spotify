@@ -10,46 +10,6 @@ main {
     flex-wrap: wrap;
 }
 
-.buttonsMain {
-    position: relative;
-    height: auto;
-    width: 150px;
-    margin: 15px;
-    padding: 15px;
-    border-radius: 4px;
-    background-color: #151515;
-    color: white;
-    font-size: 25px;
-    transition: ease-in-out 0.3s;
-    outline: none;
-    border: 3px solid #1d9ce0;
-    z-index: 1;
-}
-
-.buttonsMain:hover {
-    color: #fff;
-    cursor: pointer;
-}
-
-.buttonsMain:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    right: 50%;
-    background: linear-gradient(50deg, #fd79ff, #7fcaff );
-    transition: 0.5s all ease;
-    opacity: 0.5;
-    z-index: -1;
-}
-
-.buttonsMain:hover:before {
-    left: 0;
-    right: 0;
-    opacity: 1; 
-}
-
 .pllists {
     display: flex; 
     flex-wrap: wrap; 
@@ -58,7 +18,7 @@ main {
     padding: 20px;
     margin: 0;
     box-sizing: border-box;
-    overflow-y: auto;
+    overflow:auto;
     max-height: 90vh; 
     width: 70%; 
 }
@@ -68,12 +28,11 @@ main {
 }
 
 .pllists::-webkit-scrollbar-thumb {
-    background: linear-gradient(50deg, #fd79ff, #7fcaff);
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #fd79ff, #7fcaff);
 }
 
-.pllists::-webkit-scrollbar-track {
-    background: #151515;
-}
+
 
 .audio {
     width: 30%; 
@@ -104,17 +63,6 @@ main {
     margin-top: 5px;
 }
 
-nav button{
-    box-shadow:
-        0 0 5px #fff,
-        0 0 5px #fff,
-        0 0 5px rgb(225, 0, 0),
-        0 0 10px rgb(255, 0, 0),
-        0 0 5px rgb(252, 0, 227),
-        0 0 10px rgb(252, 0, 227),
-        0 0 10px rgb(252, 0, 227);
-}
-
 .profbutton{
     position: relative;
     height: 65px;
@@ -134,9 +82,7 @@ nav button{
     left: 0;
     border-radius: 80px;
 }
-
-
-.tooltip {
+.profilename {
     position: absolute;
     top: 70px;
     left: 50%;
@@ -152,7 +98,7 @@ nav button{
     transition: opacity 0.3s ease, visibility 0.3s ease;
   }
   
-  .profbutton:hover .tooltip {
+  .profbutton:hover .profilename {
     opacity: 1;
     visibility: visible;
   }
