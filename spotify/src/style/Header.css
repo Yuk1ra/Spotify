@@ -1,19 +1,22 @@
 header {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   background: var(--bg);
-  position: fixed;
-  overflow: hidden;
-  margin: 10px 0px 0px 20px;
+  top: 0; 
+  margin: 20px;
+  height: 60px; 
   background-color: transparent;
+  z-index: 1000; 
 }
 
 h1 {
   font-family: 'BauhausBold', monospace;
   font-size: 50px;
-  margin: 0;
+  right: 250px;
+  bottom: 10px;
   text-transform: uppercase;
   position: relative;
   transition: all 200ms;
@@ -76,3 +79,4 @@ h1:hover::after {
     transform: translateY(-200px) scale(1.5);
   }
 }
+

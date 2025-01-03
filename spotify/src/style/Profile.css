@@ -1,0 +1,87 @@
+* {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+    width: 100%; 
+    overflow-x: hidden; 
+  }
+
+header {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    background: linear-gradient(50deg, #ce2ed0, #0577c8); 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-shadow:
+        0 0 5px #fff,
+        0 0 5px #fff,
+        0 0 5px rgb(225, 0, 0),
+        0 0 10px rgb(255, 0, 0),
+        0 0 5px rgb(252, 0, 227),
+        0 0 10px rgb(252, 0, 227),
+        0 0 10px rgb(252, 0, 227);
+  }
+
+.backhead{
+    position: absolute;
+    left: 30px;
+    transform: rotate(-20deg);
+}
+
+.backnota{
+    position: absolute;
+    right: 20px;
+    transform: rotate(30deg)
+}
+
+*::-webkit-scrollbar{
+    background: transparent;
+}
+
+.headertext{
+    position: relative;
+    top: 45px;
+    right: 10px;
+    color: white;
+    font-size: 45px;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 5px #fff,
+        0 0 5px rgb(0, 140, 205),
+        0 0 10px rgb(0, 140, 205),
+        0 0 5px rgb(2, 124, 14),
+        0 0 10px rgb(2, 124, 14),
+        0 0 10px rgb(2, 124, 14);
+}
+
+main{
+    position: relative;
+    justify-content: space-between;
+    display: flex;
+    margin: 25px;
+    padding: 0;
+}
+
+.maintext{
+    position: relative;
+    left: 0;
+    font-size: 40px;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 5px #fff,
+        0 0 5px rgb(161, 4, 96),
+        0 0 10px rgb(161, 4, 96),
+        0 0 5px rgb(134, 4, 4),
+        0 0 10px rgb(134, 4, 4),
+        0 0 10px rgb(134, 4, 4);
+    
+}
+

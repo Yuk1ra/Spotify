@@ -3,17 +3,6 @@ import "../style/Main.css";
 export default function Main() {
   return (
     <main>
-      <nav>
-        <button className="buttonsMain">Music</button>
-        <button className="buttonsMain">Podcasts</button>
-        <button className="buttonsMain">Artists</button>
-        <button className="buttonsMain">Albums</button>
-        <button class="profbutton" id="profileButton">
-            <img src="/images/profile/profile1.jpg" class="profimg" alt="Profile" />
-            <span class="tooltip">IgorPishta</span>
-            </button>
-      </nav>
-
       <div className="pllists">
         <button className="audio">
           <img src="/images/img1.png" alt="list1" />

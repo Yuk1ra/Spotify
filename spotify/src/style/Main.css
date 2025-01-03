@@ -1,54 +1,14 @@
 main {
-    height: 100vh;
+    height: calc(100vh - 60px); 
     text-align: center;
     margin: 10px;
     padding: 0;
-    top: 0;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-}
-
-.buttonsMain {
-    position: relative;
-    height: auto;
-    width: 150px;
-    margin: 15px;
-    padding: 15px;
-    border-radius: 4px;
-    background-color: #151515;
-    color: white;
-    font-size: 25px;
-    transition: ease-in-out 0.3s;
-    outline: none;
-    border: 3px solid #1d9ce0;
-    z-index: 1;
-}
-
-.buttonsMain:hover {
-    color: #fff;
-    cursor: pointer;
-}
-
-.buttonsMain:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    right: 50%;
-    background: linear-gradient(50deg, #fd79ff, #7fcaff );
-    transition: 0.5s all ease;
-    opacity: 0.5;
-    z-index: -1;
-}
-
-.buttonsMain:hover:before {
-    left: 0;
-    right: 0;
-    opacity: 1; 
-}
+    margin-top: 60px;
+  }
 
 .pllists {
     display: flex; 
@@ -104,55 +64,4 @@ main {
     margin-top: 5px;
 }
 
-nav button{
-    box-shadow:
-        0 0 5px #fff,
-        0 0 5px #fff,
-        0 0 5px rgb(225, 0, 0),
-        0 0 10px rgb(255, 0, 0),
-        0 0 5px rgb(252, 0, 227),
-        0 0 10px rgb(252, 0, 227),
-        0 0 10px rgb(252, 0, 227);
-}
 
-.profbutton{
-    position: relative;
-    height: 65px;
-    width: 65px;
-    border-radius: 80px;
-    margin: 15px;
-    padding: 15px;
-    left: 325px;
-
-}
-.profimg {
-    width: 65px;
-    height: 65px;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 80px;
-}
-
-
-.tooltip {
-    position: absolute;
-    top: 70px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: linear-gradient(50deg, #fd79ff, #7fcaff);
-    color: black;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    opacity: 0; 
-    visibility: hidden; 
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-  }
-  
-  .profbutton:hover .tooltip {
-    opacity: 1;
-    visibility: visible;
-  }
