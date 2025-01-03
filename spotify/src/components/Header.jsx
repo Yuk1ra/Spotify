@@ -41,7 +41,6 @@ export default function Header(){
     return(
         <header class = "header">
             <h1 id="header_text" data-text = "Music⾕">Music⾕</h1>
-            <NavButtons/>
         </header>
     )
 }
