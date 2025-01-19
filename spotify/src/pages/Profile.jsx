@@ -4,7 +4,7 @@ import React from 'react';
 export default function Profile() {
     return (
         <>
-            <header>
+            <header className="profileheader">
                 <h2 className="headertext">Welcome, IhorPista</h2>
                 <img src="/images/backgrounds/back-headphones.png" className="backhead" alt="headphones" />
                 <img src="/images/backgrounds/back-nota.png" className="backnota" alt="nota" />

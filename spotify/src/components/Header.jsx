@@ -1,4 +1,3 @@
-import NavButtons from "./NavButtons"
 import '../style/Header.css';
 import React, { useEffect } from 'react';
 
