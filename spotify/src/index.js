@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import MainPage from './components/MainPage';
+import Profile from './components/Profile';
+
 
 import reportWebVitals from './reportWebVitals';
 

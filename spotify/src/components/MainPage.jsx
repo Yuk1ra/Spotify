@@ -6,7 +6,7 @@ import Sidebar from "./Sidebar";
 
 export default function MainPage(){
     return(
-    <body>
+    <body className="bodymain">
       <div class="container">
         <Header/> 
         <Main/>

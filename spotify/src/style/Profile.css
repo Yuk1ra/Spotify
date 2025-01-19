@@ -1,20 +1,14 @@
-* {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
 
-  html, body {
-    width: 100%; 
-  }
+html::-webkit-scrollbar{
+    display: none;
+}
 
-header {
+.profheader {
     position: relative;
-    height: 200px;
+    height: 150px;
     width: 100%;
     display: flex;
-    background: linear-gradient(50deg, #ce2ed0, #0577c8); 
+    background: linear-gradient(50deg, #faa405, #c8050f); 
     margin: 0;
     padding: 0;
     box-shadow:
@@ -25,28 +19,11 @@ header {
         0 0 5px rgb(252, 0, 227),
         0 0 10px rgb(252, 0, 227),
         0 0 10px rgb(252, 0, 227);
-  }
-
-.backhead{
-    position: absolute;
-    left: 30px;
-    transform: rotate(-20deg);
-}
-
-.backnota{
-    position: absolute;
-    right: 20px;
-    transform: rotate(30deg)
-}
-
-*::-webkit-scrollbar{
-    background: transparent;
+    z-index: 1;
 }
 
 .headertext{
     position: relative;
-    top: 45px;
-    right: 10px;
     color: white;
     font-size: 45px;
     text-shadow:
@@ -59,11 +36,34 @@ header {
         0 0 10px rgb(2, 124, 14);
 }
 
+.backhead{
+    position: absolute;
+    left: 30px;
+}
+
+.backnota{
+    position: absolute;
+    right: 20px;
+}
+
+.backhead, .backnota {
+    transform: rotate(-20deg) scale(0.33);
+}
+
+/*============================================================================*/
+.profmain{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://media3.giphy.com/media/4cAq3aSaftBAJauSgZ/giphy.gif?cid=6c09b952blnyvo5sjgu8q0v955msjxffmpo0gaja0h6496kt&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .maintext {
     height: auto;
-    justify-content: center;
-    margin-top: 30px;
+    margin-top: 35px;
     text-shadow:
         0 0 5px #fff,
         0 0 5px #fff,
@@ -76,28 +76,35 @@ header {
 
 .proflists {
     display: flex;
-    justify-content: center;
-    margin-top: -15%;
-    gap: 25px; 
+    justify-content: flex-start;
+    gap: 20px; 
     padding: 10px; 
     height: auto; 
-    width: 100%; 
+    width: 75%; 
     background: transparent; 
     overflow-x: scroll; 
+    overflow-y: hidden;
     white-space: nowrap;
     flex-direction: row;
 }
 .proflists::-webkit-scrollbar {
-    height: 10px; /* Висота скролу */
+    height: 10px;
     background: transparent;
 }
 
 .proflists::-webkit-scrollbar-thumb {
-    background:linear-gradient(to bottom, #fd79ff, #7fcaff);
+    background:linear-gradient(to bottom, #fd79ff, #ee3114);
+    box-shadow:
+        0 0 5px #fff,
+        0 0 5px #fff,
+        0 0 5px rgb(225, 0, 0),
+        0 0 10px rgb(255, 0, 0),
+        0 0 5px rgb(252, 0, 227),
+        0 0 10px rgb(252, 0, 227),
+        0 0 10px rgb(252, 0, 227);
     border-radius: 5px;
     width: 3px;
 }
-
 
 .profaudio {
     background: rgba(0, 0, 0, 0.6);
@@ -109,8 +116,8 @@ header {
     cursor: pointer;
     box-shadow:
         0 0 5px #fff,
-        0 0 10px #f46201,
-        0 0 10px #f46201;
+        0 0 10px #ff1900,
+        0 0 10px #ff5100;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -135,7 +142,15 @@ header {
     color: #fff;
 }
 
-.proflists > .playlist {
-    flex: 0 0 auto; /* Забезпечує, що кожен елемент займає лише свою частину */
-    width: calc(25% - 25px); /* Встановлює ширину кожного елементу так, щоб вмістилося 4 елемента (з врахуванням зазору) */
+.artnames{
+    height: auto;
+    margin-top: 40px;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 5px #fff,
+        0 0 5px rgb(161, 4, 96),
+        0 0 10px rgb(161, 4, 96),
+        0 0 5px rgb(215, 148, 4),
+        0 0 10px rgb(215, 148, 4),
+        0 0 10px rgb(215, 148, 4);
 }

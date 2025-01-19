@@ -1,5 +1,6 @@
 nav{
     border-radius: 30px;
+    margin-right: 5%;
 }
 
 .buttonsMain {
@@ -20,6 +21,7 @@ nav{
     background-clip: border-box;
     -webkit-background-clip: border-box;
     overflow: hidden;
+    
 }
 
 .buttonsMain:hover {

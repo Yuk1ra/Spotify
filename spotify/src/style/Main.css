@@ -1,13 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 main {
     height: 100vh;
-    text-align: center;
-    margin: 10px;
+    margin: 0;
     padding: 0;
-    top: 0;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .pllists {
@@ -32,11 +36,10 @@ main {
     background: linear-gradient(to bottom, #fd79ff, #7fcaff);
 }
 
-
-
 .audio {
-    width: 30%; 
+    flex: 1 1 calc(33.333% - 20px);
     max-width: 300px; 
+    min-width: 200px;
     box-sizing: border-box; 
     background-color: #272727; 
     color: white;
@@ -45,6 +48,7 @@ main {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     padding: 10px;
+    margin: 10px;
 }
 
 .audio img {
@@ -63,28 +67,24 @@ main {
     margin-top: 5px;
 }
 
-.profbutton{
+.profbutton {
     position: relative;
     height: 65px;
     width: 65px;
-    border-radius: 80px;
-    margin: 15px;
-    padding: 15px;
-    left: 325px;
-
+    border-radius: 50%;
+    top:-10%;
+    left: 45%;
+    
 }
 .profimg {
-    width: 65px;
-    height: 65px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 80px;
+    border-radius: 50%;
 }
 .profilename {
     position: absolute;
-    top: 70px;
+    top: 80px;
     left: 50%;
     transform: translateX(-50%);
     background: linear-gradient(50deg, #fd79ff, #7fcaff);
@@ -96,9 +96,8 @@ main {
     opacity: 0; 
     visibility: hidden; 
     transition: opacity 0.3s ease, visibility 0.3s ease;
-  }
-  
-  .profbutton:hover .profilename {
+}
+.profbutton:hover .profilename {
     opacity: 1;
     visibility: visible;
-  }
+}
