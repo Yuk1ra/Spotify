@@ -1,5 +1,6 @@
 nav{
     border-radius: 30px;
+    height: min-content;
 }
 
 .buttonsMain {

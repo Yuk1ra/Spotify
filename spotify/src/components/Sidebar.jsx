@@ -35,7 +35,7 @@ export default function Sidebar() {
     return (
         <div className="sidebar" id="sidebar">
             <button className="sidebarbutton" id="sidebarbutton">
-                <p className="sidebarbuttonarrow" id="sidebarbuttonarrow">▷</p>
+                <h1 className="sidebarbuttonarrow" id="sidebarbuttonarrow">▷</h1>
             </button>
             <div className="playlists" id="playlists">
                 <button className="listbutton"><img src="./images/playlist1.jpg" class ='sideimgs'/></button>

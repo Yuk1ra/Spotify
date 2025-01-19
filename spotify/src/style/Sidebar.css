@@ -14,10 +14,10 @@
     cursor: pointer;
     clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
     display: inline-block;
-    text-align: center;
     text-decoration: none;
     position: absolute;
     left: 110px;
+    height: 8%;
     top:40%;
     width: 140px;
     transform: translateY(-50%) rotate(90deg);
@@ -46,21 +46,19 @@
     animation: animate-gradient-border 5s linear infinite;
 }
 .sidebarbuttonarrow{
-    left: 0;
+    right: 0;
     z-index: 3;
     background: linear-gradient(to right,#7fcaff,#fd79ff,#7fcaff);
     background-size: 200%;
     text-transform: uppercase;
-    text-align: center;
     background-clip:text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: animate-gradient 2.5s linear infinite;
-    position: relative;
+    position: fi;
     display: inline-block;
     rotate: -90deg;
-    font-size: 40px;
-    z-index: 4;
+    font-size: 30px;
 }
 .sidebarbuttonarrow::before{
     content: "";
@@ -69,13 +67,13 @@
     position: absolute;
     height: 60%;
     top:20%;
-    right: 5%;
+    right: 0;
     width: 100%;
     filter: blur(8px);
     transition: opacity .3s ease-in-out;
     border-radius: 10px;
     opacity:0.3;
-    z-index:3;
+    z-index:4;
 }
 @keyframes animate-gradient{
     to{
